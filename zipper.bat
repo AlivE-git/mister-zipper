@@ -120,7 +120,7 @@ if %CalcSize%==1 (
 )
 
 :calcAfter
-echo  Подсчет веса каталога...
+echo  Подсчет веса каталога... 
 @REM setlocal enableextensions disabledelayedexpansion
  
 set "folder=%~f1" & if not defined folder set "folder=%cd%"
@@ -135,8 +135,8 @@ set "size=%%a%%b"
 set "size=%%a"
 )
 )
-echo 	До:    %sizeBefore%
-echo 	После: %size%
+echo 	До:    %sizeBefore%  >> log.txt
+echo 	После: %size%  >> log.txt
 @REM endLocal
 
 :end
